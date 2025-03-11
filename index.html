@@ -16,7 +16,6 @@
         .container {
             display: flex;
             align-items: center;
-            max-width: 900px;
         }
         .profile-pic {
             width: 300px;
@@ -56,9 +55,19 @@
             color: black;
             text-decoration: none;
         }
-        .resume { background-color: gold; }
-        .projects { background-color: red; color: white; }
-        .contact { background-color: lightblue; }
+        .projects1 { background-color: #87c4ff; color: white; }  /* 稍微深一點的藍 */
+        .projects2 { background-color: #9bb0ff; color: white; }
+        .projects3 { background-color: #8098ff; color: white; }
+        .word-box {
+          display: inline-block;
+          background-color: #d0e8ff; /* 淡藍色 */
+          color: #000; /* 文字顏色 */
+          padding: 5px 10px;
+          margin: 5px;
+          border-radius: 8px; /* 圓角 */
+          font-weight: bold;
+          font-size: 16px;
+        }
     </style>
 </head>
 <body>
@@ -68,12 +77,20 @@
         </div>
         <div class="content">
             <h1>People are made up of many tags.</h1>
-            <p class="about">#Elijah Tan<br>#Swift</p>
-            <div class="buttons">
-                <a href="#" class="button resume">Swift</a>
-                <a href="#" class="button projects">Arduino</a>
-                <a href="#" class="button contact">Kayak</a>
+            <div>
+                <span class="word-box">Computer Science</span>
+                <span class="word-box">Kayak</span>
+                <span class="word-box">Fujifilm</span>
+                <span class="word-box">Cat</span>
             </div>
+            <div class="buttons">
+                <a href="https://github.com/a110482"
+                    class="button projects1">Github</a>
+                <a href="https://apps.apple.com/us/app/%E5%96%AE%E5%AD%97%E5%B1%8B-%E6%8E%83%E6%8F%8F%E6%97%A2%E6%88%90%E5%96%AE%E5%AD%97%E5%8D%A1-%E6%8E%83%E6%8F%8F%E7%BF%BB%E8%AD%AF-%E5%9C%96%E7%89%87%E7%BF%BB%E8%AD%AF/id1623601073" class="button projects2">My App</a>
+                <a href="#" class="button projects3">Kayak</a>
+            </div>
+            <p class="about">name: ElijahTan</p>
+            <p class="about">email: a110482@yahoo.com.tw</p>
         </div>
     </div>
 </body>
